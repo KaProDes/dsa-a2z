@@ -22,10 +22,10 @@ int main() {
 
     // pre-computation
 
-    int freqArr[13] = {0};
+    map<int,int> freqMap;
 
     for(int i=0;i<n;i++){
-        freqArr[arr[i]]++;
+        freqMap[arr[i]]++;
     }
 
     int q;
@@ -35,7 +35,7 @@ int main() {
         int number;
         cin >> number;
         // fetch
-        cout << number << "\t" << freqArr[number] << endl;
+        cout << number << "\t" << freqMap[number] << endl;
     }
 
     return 0;
